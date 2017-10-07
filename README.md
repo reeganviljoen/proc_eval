@@ -44,6 +44,10 @@ Because this gem makes use of keyword parameters and refinements, it is only com
 
 ## Usage
 
+In your `Gemfile` add `gem 'proc_evaluate'`.
+
+In your codebase add `require 'proc_evaluate'`.
+
 The refinement methods in the gem can be used by including `using ProcEvaluate` in the file, **class** definition, or **module** definition in which you wish to use the [refinement][1].
 
 ### Class and Module usage
