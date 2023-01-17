@@ -40,7 +40,7 @@ Likewise, the developer has greater flexibility when using my gem/library/dsl as
 
 ## Compatibility
 
-Because this gem makes use of keyword parameters and refinements, it is only compatible with Ruby version 2.0.0 and above (excluding any future release of Ruby 3).
+Because this gem makes use of keyword parameters and refinements, it is only compatible with Ruby version 2.0.0 and above.
 
 ## Usage
 
