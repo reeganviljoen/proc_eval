@@ -1,8 +1,8 @@
 require 'minitest/autorun'
-require 'proc_evaluate'
+require 'proc_eval'
 
-class ProcEvaluateClassTest < Minitest::Test
-  using ProcEvaluate
+class ProcEvalClassTest < Minitest::Test
+  using ProcEval
 
   def test_example1
     lambda = ->(a) { a }
@@ -31,7 +31,7 @@ class ProcEvaluateClassTest < Minitest::Test
 end
 
 module TestModule
-  using ProcEvaluate
+  using ProcEval
   extend self
 
   def example1
@@ -55,7 +55,7 @@ module TestModule
   end
 end
 
-class ProcEvaluateModuleTest < Minitest::Test
+class ProcEvalModuleTest < Minitest::Test
   def test_example1
     value = TestModule.example1
     assert_equal value, 'hello'

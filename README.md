@@ -1,4 +1,4 @@
-# ProcEvaluate
+# ProcEval
 
 This ruby gem adds an `evaulate` method to Proc and Object instances through the use of [Refinements][1].
 
@@ -44,19 +44,19 @@ Because this gem makes use of keyword parameters and refinements, it is only com
 
 ## Usage
 
-In your `Gemfile` add `gem 'proc_evaluate'`.
+In your `Gemfile` add `gem 'proc_eval'`.
 
-In your codebase add `require 'proc_evaluate'`.
+In your codebase add `require 'proc_eval'`.
 
-The refinement methods in the gem can be used by including `using ProcEvaluate` in the file, **class** definition, or **module** definition in which you wish to use the [refinement][1].
+The refinement methods in the gem can be used by including `using ProcEval` in the file, **class** definition, or **module** definition in which you wish to use the [refinement][1].
 
 ### Class and Module usage
 
 The refinement methods can be activated for use within a specific Class or Module.
 
 ```ruby
-class ProcEvaluateClassExamples
-  using ProcEvaluate
+class ProcEvalClassExamples
+  using ProcEval
 
   def example1
     a = ->(a) { a }
@@ -79,14 +79,14 @@ class ProcEvaluateClassExamples
   end
 end
 
-e = ProcEvaluateClassExamples.new
+e = ProcEvalClassExamples.new
 e.example1 # "hello"
 e.example2 # [1, 2, 3, 4, nil, nil, nil]
 e.example3 # "Im a proc!!!"
 e.example4 # "im a value!!!"
 
-module ProcEvaluateModuleExamples
-  using ProcEvaluate
+module ProcEvalModuleExamples
+  using ProcEval
   extend self
 
   def example1
@@ -110,17 +110,17 @@ module ProcEvaluateModuleExamples
   end
 end
 
-ProcEvaluateModuleExamples.example1 # "hello"
-ProcEvaluateModuleExamples.example2 # [1, 2, 3, 4, nil, nil, nil]
-ProcEvaluateModuleExamples.example3 # "Im a proc!!!"
-ProcEvaluateModuleExamples.example4 # "im a value!!!"
+ProcEvalModuleExamples.example1 # "hello"
+ProcEvalModuleExamples.example2 # [1, 2, 3, 4, nil, nil, nil]
+ProcEvalModuleExamples.example3 # "Im a proc!!!"
+ProcEvalModuleExamples.example4 # "im a value!!!"
 ```
 
 Another example showing a different pattern of usage:
 
 ```ruby
 class Example
-  using ProcEvaluate
+  using ProcEval
 
   def initialize(value)
     @value = value
@@ -165,7 +165,7 @@ To test the example, place the code into a file and run with the command `ruby e
 ```ruby
 # example.rb
 
-using ProcEvaluate # activate the refinements for the current file
+using ProcEval # activate the refinements for the current file
 
 proc = proc {|a, b, c| [a, b, c] }
 proc.evaluate() # [nil,  nil, nil]
