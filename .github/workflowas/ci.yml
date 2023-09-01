@@ -1,9 +1,6 @@
-name: Ruby
+name: CI
 
-on:
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
   pull_request:
 
