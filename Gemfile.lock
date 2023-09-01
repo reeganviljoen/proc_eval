@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    proc_evaluate (1.0.0)
+    proc_eval (2.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -10,12 +10,13 @@ GEM
     rake (13.0.6)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
   minitest (~> 5.0)
-  proc_evaluate!
+  proc_eval!
   rake (~> 13.0)
 
 BUNDLED WITH
-   2.3.14
+   2.4.8
