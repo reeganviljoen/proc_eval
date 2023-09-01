@@ -3,7 +3,7 @@ require_relative 'lib/proc_eval/version.rb'
 Gem::Specification.new do |spec|
   spec.name = 'proc_eval'
   spec.version = ProcEval::VERSION
-  spec.authors = ['Brent Jacobs', 'br3nt']
+  spec.authors = ['Brent Jacobs', 'br3nt', 'reeganviljoen']
   spec.homepage = 'https://github.com/reeganviljoen/proc_eval'
   spec.required_ruby_version = '>= 2.7'
   spec.summary = 'Allow evaluation of variables, procs, and lambdas with the same level of flexibility.'
