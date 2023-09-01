@@ -1,4 +1,4 @@
-module ProcEval
+module ProcEvaluate
 
   refine Object do
     def evaluate(*args, **options)
@@ -59,4 +59,4 @@ module ProcEval
   end # refine Proc
 end
 
-require 'proc_eval/version'
+require 'proc_evaluate/version'

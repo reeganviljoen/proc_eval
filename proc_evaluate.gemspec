@@ -1,11 +1,11 @@
-require_relative 'lib/proc_eval/version.rb'
+require_relative 'lib/proc_evaluate/version.rb'
 
 Gem::Specification.new do |spec|
-  spec.name = 'proc_eval'
-  spec.version = ProcEval::VERSION
+  spec.name = 'proc_evaluate'
+  spec.version = ProcEvaluate::VERSION
   spec.authors = ['Brent Jacobs', 'br3nt']
-  spec.homepage = 'https://github.com/reeganviljoen/proc_eval'
-  spec.required_ruby_version = '>= 2.7'
+  spec.homepage = 'https://github.com/br3nt/proc_evaluate'
+  spec.required_ruby_version = '>= 2.0'
   spec.summary = 'Allow evaluation of variables, procs, and lambdas with the same level of flexibility.'
   spec.description = <<-DESC
     Adds an `evaulate` refinement method to Proc and Object instances.
@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   spec.licenses = ['MIT']
 
   spec.files = [
-    'lib/proc_eval.rb',
-    'lib/proc_eval/version.rb'
+    'lib/proc_evaluate.rb',
+    'lib/proc_evaluate/version.rb'
   ]
 end
